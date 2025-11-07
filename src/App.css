@@ -1,0 +1,28 @@
+.app-root {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bg-color),
+    var(--primary-color)
+  );
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.app-header {
+  margin-bottom: 1rem;
+}
+
+.app-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.app-apps {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

@@ -1,0 +1,16 @@
+.header {
+  width: 100vw;
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
