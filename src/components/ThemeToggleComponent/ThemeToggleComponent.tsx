@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "./ThemeToggleComponent.css";
 
 const lightTheme = {
@@ -9,13 +9,13 @@ const lightTheme = {
   "--extra-color": "#DEF2F1",
 };
 
-const darkTheme = {
-  "--bg-color": "#4A1942",
-  "--text-color": "#EAEAEA",
-  "--primary-color": "#893168",
-  "--accent-color": "#2E1C2B",
-  "--extra-color": "#050404",
-};
+// const darkTheme = {
+//   "--bg-color": "#4A1942",
+//   "--text-color": "#EAEAEA",
+//   "--primary-color": "#893168",
+//   "--accent-color": "#2E1C2B",
+//   "--extra-color": "#050404",
+// };
 
 const applyTheme = (theme: Record<string, string>) => {
   Object.entries(theme).forEach(([key, value]) => {
@@ -24,11 +24,11 @@ const applyTheme = (theme: Record<string, string>) => {
 };
 
 const ThemeToggleComponent = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    applyTheme(darkMode ? darkTheme : lightTheme);
-  }, [darkMode]);
+    applyTheme(lightTheme);
+  }, []);
 
   return (
     <></>
